@@ -22,13 +22,6 @@ public class MessagesController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @GetMapping
-    public ResponseEntity<List<MessageResponse>> getAllMessages() {
-List<MessageResponse>list=service.findAll();
 
-
-
-return null;
-    }
 
 }
