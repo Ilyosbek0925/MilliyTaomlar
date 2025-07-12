@@ -20,7 +20,6 @@ import java.io.IOException;
 @RequiredArgsConstructor
 @Component
 public class JwtFilter extends OncePerRequestFilter {
-private String[] openApi={"","","",""};
     private final JwtService jwtService;
 private final AuthService authService;
     @Override

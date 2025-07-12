@@ -21,7 +21,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 @EnableWebSecurity
 public class SecurityConfiguration {
-    private final String OPEN_API[] = {"/register", "/login"};
+    private final String OPEN_API[] = {"/register",
+            "/login",
+            "/v3/api-docs/**",
+            "/swagger-ui/**",
+            "/swagger-ui.html"};
 
     private final PasswordEncoder passwordEncoder;
     private final AuthService authService;
